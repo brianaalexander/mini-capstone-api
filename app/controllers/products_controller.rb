@@ -5,10 +5,10 @@ class ProductsController < ApplicationController
   end
 
   def create
-    product = Product.new(name: "jacket",
-                          price: 25,
-                          image_url: "#",
-                          description: "wear when you are cold")
+    product = Product.new(name: params["name"],
+                          price: params["price"],
+                          image_url: params["image_url"],
+                          description: params["description"])
     product.save
     render json: product.as_json
   end

@@ -1,0 +1,16 @@
+### Products index
+GET http://localhost:3000/products.json
+
+### Products show
+GET http://localhost:3000/products/1.json
+
+### Products create
+POST http://localhost:3000/products.json
+Content-Type: application/json
+
+{
+  "name": "hats",
+  "price": "12",
+  "image_url": "#",
+  "description": "these go on your head"
+}
