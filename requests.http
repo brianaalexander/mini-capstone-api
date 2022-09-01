@@ -14,3 +14,14 @@ Content-Type: application/json
   "image_url": "#",
   "description": "these go on your head"
 }
+
+### Products update
+PATCH http://localhost:3000/products/5.json
+Content-Type: application/json
+
+{
+  "name": "glitter hats"
+}
+
+### Products destroy
+DELETE http://localhost:3000/products/7.json
