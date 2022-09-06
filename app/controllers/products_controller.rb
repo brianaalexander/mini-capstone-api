@@ -9,9 +9,14 @@ class ProductsController < ApplicationController
                           price: params["price"],
                           image_url: params["image_url"],
                           description: params["description"])
+
     product.save
     @product = product
-    render template: "products/create"
+    if @product.valid?
+      render template: "products/show"
+    else 
+      render json: { message: "Hey, something went wrong!", errors: @product.errors.full_messages }, status: :unprocessable_entity
+    end
   end
 
   def show
@@ -27,7 +32,11 @@ class ProductsController < ApplicationController
     product.description = params["description"] || product.description
     product.save
     @product = product
-    render template: "products/update"
+    if @product.valid?
+      render template: "products/show"
+    else 
+      render json: { message: "Hey, something went wrong!", errors: @product.errors.full_messages }, status: :unprocessable_entity
+    end
   end
 
   def destroy

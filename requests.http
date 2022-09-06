@@ -9,10 +9,10 @@ POST http://localhost:3000/products.json
 Content-Type: application/json
 
 {
-  "name": "hats",
-  "price": "12",
+  "name": " puffy coats",
+  "price": 30.00,
   "image_url": "#",
-  "description": "these go on your head"
+  "description": "keeps you warm in the winter"
 }
 
 ### Products update
