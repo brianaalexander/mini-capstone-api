@@ -13,3 +13,6 @@ product = Product.new(name: "shorts", price: 8, image_url: "#", description: "sh
 product.save
 product = Product.new(name: "shoes", price: 20, image_url: "#", description: "feet covers")
 product.save
+
+supplier = Supplier.new(name: "Amazon", email: "zon@test.com", phone_number: "5559991234")
+supplier - Supplier.new(name: "Etsy", email: "yste@test.com", phone_number: "5559991234")
