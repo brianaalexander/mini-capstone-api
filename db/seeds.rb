@@ -16,5 +16,5 @@ product.save
 
 supplier = Supplier.new(name: "Amazon", email: "zon@test.com", phone_number: "5559991234")
 supplier.save
-supplier - Supplier.new(name: "Etsy", email: "yste@test.com", phone_number: "5559991234")
+supplier = Supplier.new(name: "Etsy", email: "yste@test.com", phone_number: "5559991234")
 supplier.save
