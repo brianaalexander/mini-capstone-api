@@ -1,5 +1,6 @@
 ### Users create (signup)
 POST http://localhost:3000/users.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjI3NzI0NDN9.7_jDKx3D6iNPNxRv26gTQ3GP3pN5txiV3iFxNffQfeE
 Content-Type: application/json
 
 {
@@ -26,6 +27,7 @@ GET http://localhost:3000/products/3.json
 
 ### Products create
 POST http://localhost:3000/products.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjI3NzI0NDN9.7_jDKx3D6iNPNxRv26gTQ3GP3pN5txiV3iFxNffQfeE
 Content-Type: application/json
 
 {
@@ -36,6 +38,7 @@ Content-Type: application/json
 
 ### Products update
 PATCH http://localhost:3000/products/5.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjI3NzI0NDN9.7_jDKx3D6iNPNxRv26gTQ3GP3pN5txiV3iFxNffQfeE
 Content-Type: application/json
 
 {
@@ -44,3 +47,4 @@ Content-Type: application/json
 
 ### Products destroy
 DELETE http://localhost:3000/products/7.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjI3NzI0NDN9.7_jDKx3D6iNPNxRv26gTQ3GP3pN5txiV3iFxNffQfeE
