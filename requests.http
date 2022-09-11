@@ -48,3 +48,16 @@ Content-Type: application/json
 ### Products destroy
 DELETE http://localhost:3000/products/7.json
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjI3NzI0NDN9.7_jDKx3D6iNPNxRv26gTQ3GP3pN5txiV3iFxNffQfeE
+
+### Orders Create
+POST http://localhost:3000/orders.json
+Content-Type: application/json
+
+{
+"user_id": "1",
+"product_id": 640,
+"quantity": 480,
+"subtotal": 4,
+"tax": 2,
+"total": 6
+}
