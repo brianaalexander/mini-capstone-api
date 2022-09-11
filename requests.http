@@ -55,12 +55,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjI5OTgyN
 Content-Type: application/json
 
 {
-"user_id": "1",
-"product_id": 1,
-"quantity": 2,
-"subtotal": 4,
-"tax": 2,
-"total": 6
+"product_id": "1",
+"quantity": "2"
 }
 
 ### Orders Show
