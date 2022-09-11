@@ -55,9 +55,12 @@ Content-Type: application/json
 
 {
 "user_id": "1",
-"product_id": 640,
+"product_id": 1,
 "quantity": 480,
 "subtotal": 4,
 "tax": 2,
 "total": 6
 }
+
+### Orders Show
+GET http://localhost:3000/orders/1.json
