@@ -1,7 +1,10 @@
 class OrdersController < ApplicationController
   def index
+    if current_user
     orders = current_user.orders
-    render json: orders.as_json
+    # render template: "orders/index"
+    else 
+      render json: [], status: :unauthorized
   end
 
   def create
