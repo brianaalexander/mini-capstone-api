@@ -1,6 +1,7 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjMxMTU0NDl9.1dYRE5xoilkOywmUDFa5aPMA7a-xynSOTjG6MiHXIUk
+
 ### Users create (signup)
 POST http://localhost:3000/users.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjI3NzI0NDN9.7_jDKx3D6iNPNxRv26gTQ3GP3pN5txiV3iFxNffQfeE
 Content-Type: application/json
 
 {
@@ -27,7 +28,7 @@ GET http://localhost:3000/products/3.json
 
 ### Products create
 POST http://localhost:3000/products.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjI3NzI0NDN9.7_jDKx3D6iNPNxRv26gTQ3GP3pN5txiV3iFxNffQfeE
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
@@ -38,7 +39,7 @@ Content-Type: application/json
 
 ### Products update
 PATCH http://localhost:3000/products/5.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjI3NzI0NDN9.7_jDKx3D6iNPNxRv26gTQ3GP3pN5txiV3iFxNffQfeE
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
@@ -47,11 +48,11 @@ Content-Type: application/json
 
 ### Products destroy
 DELETE http://localhost:3000/products/7.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjI3NzI0NDN9.7_jDKx3D6iNPNxRv26gTQ3GP3pN5txiV3iFxNffQfeE
+Authorization: Bearer {{jwt}}
 
 ### Orders Create
 POST http://localhost:3000/orders.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjI5OTgyNjR9.7yl1d4NiHnTE1XBoOT90TYiNh2IV3eHy-9Q_amIHsk8
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
@@ -61,8 +62,8 @@ Content-Type: application/json
 
 ### Orders Show
 GET http://localhost:3000/orders/1.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjI5OTgyNjR9.7yl1d4NiHnTE1XBoOT90TYiNh2IV3eHy-9Q_amIHsk8
+Authorization: Bearer {{jwt}}
 
 ### Orders Index
 GET http://localhost:3000/orders.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjI5OTgyNjR9.7yl1d4NiHnTE1XBoOT90TYiNh2IV3eHy-9Q_amIHsk8
+Authorization: Bearer {{jwt}}
