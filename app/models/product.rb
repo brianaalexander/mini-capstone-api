@@ -13,6 +13,7 @@ class Product < ApplicationRecord
 
   has_many :images
   has_many :orders
+  has_many :category_products
 
   def friendly_created_at
     created_at.strftime("%B %e, %Y")
